@@ -38,7 +38,6 @@
     .information {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
-      flex-direction: column;
       align-items: left;
       background-color: hsl(246, 38%, 16%);
       color: white;
@@ -55,7 +54,7 @@
       border-bottom-right-radius: 10px;
       display: flex;
       width: 50%;
-      /* border: thin solid lime; */
+      border: thin solid lime;
     }
 
     .overlay {
@@ -107,14 +106,13 @@
 
   @media (max-width: 400px) {
     .container {
-      display: flex;
-      justify-content: flex-start;
+      flex-direction: column;
     }
     
-    .panel {
-      display: flex;
-      width: 100%;
+    .image {
+      height: 100%;
     }
+    
   }
 
   </style>
@@ -129,7 +127,7 @@
     <div class="stats">
       <h2>10k+ <span class="labels">companies</span></h2>
       <h2>314 <span class="labels">templates</span></h2>
-      <h2>12m+ <span class="labels">queries</span></h2>
+      <h2>12M+ <span class="labels">queries</span></h2>
     </div>
   </div>
   <div class="panel image">
