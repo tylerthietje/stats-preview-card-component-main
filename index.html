@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'open sans', sans-serif;
+      background-color: black;
+      margin: auto;
+      border: thin dashed purple;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container {
+      margin: 10%;
+      display: flex;
+      width: 80%;
+      /* border: 2px solid red; */
+    }
+
+    .information {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      flex-direction: column;
+      align-items: left;
+      background-color: hsl(246, 38%, 16%);
+      color: white;
+      padding: 40px 0px 40px 80px;
+      width: 50%;
+      /* border: thin solid blue; */
+
+    }
+
+    .image {
+      background-image: url('images/image-header-desktop.jpg');
+      background-size: cover;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      width: 50%;
+      /* border: thin solid lime; */
+    }
+
+    .overlay {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      position: inherit;
+      height: 100%;
+      width: 100%;
+      background: rgba(129, 29, 190, 0.6)
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      width: 70%;
+      /* border: thin solid seagreen; */
+    }
+
+    h1 {
+      width: 80%;
+    }
+
+    p {
+      font-size: 14px;
+      color: #8b88a3;
+      width: 70%;
+    }
+
+    h2 {
+      width: 20%;
+      /* border: thin dashed yellow */
+    }
+
+
+    span.labels {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #8b88a3;
+      /* border: thin solid pink; */
+      letter-spacing: 2px;
+    }
+
+    .title {
+      color: #8e4cb1;
+    }
+
+    /* FOR MOBILE SCREENS */
+
+  @media (max-width: 400px) {
+    .container {
+      display: flex;
+      justify-content: flex-start;
+    }
+    
+    .panel {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="panel information">
+    <h1>Get <span class="title">insights</span> that help your business grow.</h1>
+
+    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    experience, and overall efficiency. </p>
+    <div class="stats">
+      <h2>10k+ <span class="labels">companies</span></h2>
+      <h2>314 <span class="labels">templates</span></h2>
+      <h2>12m+ <span class="labels">queries</span></h2>
+    </div>
+  </div>
+  <div class="panel image">
+    <div class="overlay"></div> 
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
